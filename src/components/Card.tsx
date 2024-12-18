@@ -6,12 +6,12 @@ type CardProps = {
 
 const Card = ({ adviceNumber, adviceText, fetchAdvice }: CardProps) => {
   return (
-    <div className="flex justify-center items-center flex-col bg-dark-grayish-blue rounded-2xl max-w-[34rem] text-center p-12 relative m-auto">
+    <div className="flex justify-center items-center flex-col bg-dark-grayish-blue rounded-2xl max-w-[34rem] text-center relative py-8">
       <span className="text-neon-green tracking-[.3rem] font-semibold">
         ADVICE #{adviceNumber}
       </span>
       <p className="font-manrope text-quote text-light-cyan py-6">
-        {adviceText}
+        {`"${adviceText}"`}
       </p>
       <svg
         width="444"

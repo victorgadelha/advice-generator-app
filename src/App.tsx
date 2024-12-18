@@ -30,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col h-screen w-full bg-dark-blue">
+    <div className="flex justify-center items-center flex-col h-screen w-full bg-dark-blue p-8">
       <Card
         adviceNumber={adviceNumber}
         adviceText={adviceText}
