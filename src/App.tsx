@@ -17,7 +17,8 @@ const App = () => {
         "https://api.adviceslip.com/advice"
       );
       const data: AdviceResponse = await response.json();
-      setAdviceText(`"${data.slip.advice}"`);
+      console.log(data);
+      setAdviceText(data.slip.advice);
       setAdviceNumber(data.slip.id);
     } catch (error) {
       console.error(error);
@@ -29,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col h-screen w-full bg-dark-blue px-8">
+    <div className="flex justify-center items-center flex-col h-screen w-full bg-dark-blue">
       <Card
         adviceNumber={adviceNumber}
         adviceText={adviceText}

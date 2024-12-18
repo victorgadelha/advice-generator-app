@@ -6,7 +6,7 @@ type CardProps = {
 
 const Card = ({ adviceNumber, adviceText, fetchAdvice }: CardProps) => {
   return (
-    <div className="flex justify-center items-center flex-col bg-dark-grayish-blue rounded-2xl max-w-[34rem] text-center relative p-16">
+    <div className="flex justify-center items-center flex-col bg-dark-grayish-blue rounded-2xl max-w-[34rem] text-center p-12 relative m-auto">
       <span className="text-neon-green tracking-[.3rem] font-semibold">
         ADVICE #{adviceNumber}
       </span>
